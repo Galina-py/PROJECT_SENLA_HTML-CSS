@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БГУИР - Курс лекций по предмету</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background: #fff;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-weight: normal;
+            font-size: 22px;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 25px;
+            line-height: 1.3;
+        }
+
+        .subject-block {
+            margin-bottom: 30px;
+        }
+
+        .subject-title {
+            font-weight: normal;
+            font-style: italic;
+            font-size: 18px;
+            margin: 0 0 8px 0;
+            line-height: 1.4;
+        }
+
+        .subject-teacher {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 18px;
+        }
+
+        .lecture-list {
+            list-style: none;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .lecture-list li {
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 1px 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .lecture-list .sub-list {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+        }
+
+        .lecture-list .sub-list li {
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 1px 0;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 20px 0 25px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            padding-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .back-link a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .back-link a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="page-title">Курс лекций по предмету</h1>
+
+        <div class="subject-block" id="db">
+            <h3 class="subject-title">
+                Базы данных <span class="subject-teacher">(Иванов И.И.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Определение базы данных (БД) и банка данных (БНД). Состав и структура банка данных. Назначение основных компонентов банка данных.</li>
+                <li>2. Основные признаки классификации банка данных (БНД).</li>
+                <li>3. Основные этапы эволюции систем обработки данных. Основные отличия в концепциях обработки данных разных этапов.</li>
+                <li>4. Взаимосвязь этапов создания базы данных (БД) и используемых моделей предметной области. Классификационная схема моделей базы данных (БД).</li>
+                <li>5. Первичный и вторичный ключ записи. Примеры. Типология архитектуры доступа к записям.</li>
+                <li>6. Понятие ключа и индекса. Прямая и инвертированная формы индекса. Примеры.</li>
+                <li>7. Сходство и отличие процессов обработки данных средствами файловой системы и системы управления (СУ) базы данных (БД).</li>
+                <li>8. Характерные свойства и отличия линейных и нелинейных структур. Нелинейные структуры. Примеры.</li>
+                <li>9. Типология простых запросов. Примеры.</li>
+                <li>10. Назначение и особенности этапов проектирования базы данных (БД).</li>
+                <li>11. Подходы к системному анализу предметной области. Характеристика модели информационной системы Захама.</li>
+                <li>12. Концептуальные модели данных. Модель &laquo;сущность-связь&raquo;. Сущность, атрибуты, связи. Сущность-связь и мощности связей. Примеры.</li>
+                <li>13. Функциональная модель IDEF0. Графический язык модели. Примеры.</li>
+                <li>14. Диаграмма потоков данных (DFD). Графический язык диаграммы. Примеры.</li>
+                <li>15. Основные понятия UML. Сущности и отношения. Диаграммы классов и прецедентов.</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="subject-block" id="graphics">
+            <h3 class="subject-title">
+                Компьютерная графика <span class="subject-teacher">(Петров П.П.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Средства графического взаимодействия ЭВМ и человека. Классификация и краткая характеристика. История машинной графики.</li>
+                <li>2. Аппаратные средства компьютерной графики.</li>
+                <li>3. Математические основы компьютерной графики. Представление и преобразование точек и отрезков. Отображение, вращение, масштабирование.</li>
+                <li>4. Трехмерные преобразования и проекции.</li>
+                <li>5. Алгоритмы вычерчивания отрезков.</li>
+                <li>6. Растровая развертка сплошных областей.</li>
+                <li>7. Алгоритмы заполнения.</li>
+                <li>8. Основные методы устранения ступенчатости.</li>
+                <li>9. Отсечения:
+                    <ul class="sub-list">
+                        <li>&bull; двумерные</li>
+                        <li>&bull; трехмерные</li>
+                        <li>&bull; отсечение многоугольников.</li>
+                    </ul>
+                </li>
+                <li>10. Удаление невидимых линий.</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="subject-block" id="networks">
+            <h3 class="subject-title">
+                Компьютерные сети <span class="subject-teacher">(Сидоров С.С.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Базовые понятия</li>
+                <li>2. Классификация компьютерных сетей</li>
+                <li>3. Файлообменные P2P сети</li>
+                <li>4. P2P-сети с централизованным каталогом. Napster</li>
+                <li>5. Частично децентрализованные сети</li>
+                <li>6. Полностью децентрализованные сети</li>
+                <li>7. Полностью децентрализованные сети</li>
+                <li>8. Другие приложения P2P-сетей</li>
+                <li>9. Структура сети Интернет</li>
+                <li>10. Коммутация каналов и коммутация пакетов</li>
+                <li>11. Многоуровневые сетевые модели</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="subject-block" id="informatics">
+            <h3 class="subject-title">
+                Информатика <span class="subject-teacher">(Курочка С.П.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Понятие информатики</li>
+                <li>2. Понятие информации</li>
+                <li>3. Система кодирования информации</li>
+                <li>4. Кодирование текстовой информации</li>
+                <li>5. Кодирование графической информации</li>
+                <li>6. Кодирование звуковой информации</li>
+                <li>7. Режимы и методы передачи информации</li>
+                <li>8. Информационные технологии</li>
+                <li>9. Этапы развития информационных технологий</li>
+                <li>10. Появление компьютеров и компьютерных технологий</li>
+                <li>11. Эволюция развития персональных компьютеров</li>
+                <li>12. Структура современных вычислительных систем</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="subject-block" id="algorithms">
+            <h3 class="subject-title">
+                Алгоритмизация <span class="subject-teacher">(Дмитриев Д.Д.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Этапы решения задач на ЭВМ</li>
+                <li>2. Алгоритм. Свойства алгоритмов</li>
+                <li>3. Алгоритмическая конструкция ветвления</li>
+                <li>4. Алгоритмическая конструкция цикла</li>
+                <li>5. Использование циклов с параметром для обработки массивов</li>
+                <li>6. История создания языка</li>
+                <li>7. Интегрированная инструментальная оболочка (ИИО) Turbo Pascal</li>
+                <li>8. Алфавит и программа на ТР 7.0</li>
+                <li>9. Простые типы данных</li>
+                <li>10. Константы, переменные и оператор присваивания</li>
+                <li>11. Операторы ввода/вывода</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="subject-block" id="design">
+            <h3 class="subject-title">
+                Проектирование <span class="subject-teacher">(Сергеенко С.С.)</span>
+            </h3>
+            <ul class="lecture-list">
+                <li>1. Человеко-машинный интерфейс. Понятия, подходы, принципы.</li>
+                <li>2. Этапы разработки пользовательского интерфейса</li>
+                <li>3. Определение функциональных требований к интерфейсу</li>
+                <li>4. Анализ пользователей: методы и средства</li>
+                <li>5. Прототипирование</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <div class="back-link">
+            <a href="index.html">← Назад к расписанию</a>
+        </div>
+
+        <div class="footer">
+            &copy; Все права защищены. 2016 год
+        </div>
+
+    </div>
+
+</body>
+</html>

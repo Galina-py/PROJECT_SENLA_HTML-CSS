@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ББГУИР - Расписание занятий</title>
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 20px 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            padding-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .day {
+            font-weight: normal;
+            vertical-align: middle;
+            font-size: 16px;
+            padding: 15px 8px;
+            min-width: 20px;
+            width: 25px;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: 0px;
+            line-height: 1.4;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: darkblue;
+        }
+        .teacher {
+            font-size: 13px;
+        }
+        .room {
+            font-size: 13px;
+        }
+
+        .header-left {
+            text-align: left;
+        }
+
+        .schedule-title {
+            font-weight: normal;
+            font-size: 24px;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .schedule-date {
+            font-weight: bold;
+        }
+
+        
+        .department {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 18px;
+            margin: 0;
+            margin-top: 6px;
+            line-height: 1.3;
+        }
+
+        .time-sup {
+            font-size: 0.7em;
+            vertical-align: super;
+            line-height: 1;
+        }
+        .time-hours {
+            font-size: 1em;
+        }
+        .time-range {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-left">
+            <h1 class="schedule-title">Расписание занятий <span class="schedule-date">с 04/01/2017</span></h1>
+            <h3 class="department">Кафедра ПОИТ</h3>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th rowspan="2">Время</th>
+                    <th colspan="2">2 курс</th>
+                </tr>
+                <tr>
+                    <th>ПОИТ-01</th>
+                    <th>ПОИТ-02</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day" rowspan="3">Понедельник</td>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">9</span><span class="time-sup">00</span>
+                            –
+                            <span class="time-hours">11</span><span class="time-sup">00</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#db">Базы данных</a><br>
+                        <span class="teacher">Иванов И.И.</span><br>
+                        <span class="room">412</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#graphics">Компьютерная графика</a><br>
+                        <span class="teacher">Петров П.П.</span><br>
+                        <span class="room">414</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">11</span><span class="time-sup">10</span>
+                            –
+                            <span class="time-hours">13</span><span class="time-sup">10</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#networks">Компьютерные сети</a><br>
+                        <span class="teacher">Сидоров С.С.</span><br>
+                        <span class="room">508</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#informatics">Информатика</a><br>
+                        <span class="teacher">Курочка С.П.</span><br>
+                        <span class="room">506</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">13</span><span class="time-sup">20</span>
+                            –
+                            <span class="time-hours">14</span><span class="time-sup">20</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#informatics">Информатика</a><br>
+                        <span class="teacher">Курочка С.П.</span><br>
+                        <span class="room">506</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#networks">Компьютерные сети</a><br>
+                        <span class="teacher">Сидоров С.С.</span><br>
+                        <span class="room">508</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="day" rowspan="3">Вторник</td>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">15</span><span class="time-sup">30</span>
+                            –
+                            <span class="time-hours">17</span><span class="time-sup">30</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#algorithms">Алгоритмизация</a><br>
+                        <span class="teacher">Дмитриев Д.Д.</span><br>
+                        <span class="room">202</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#design">Проектирование</a><br>
+                        <span class="teacher">Сергеенко С.С.</span><br>
+                        <span class="room">412</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">17</span><span class="time-sup">40</span>
+                            –
+                            <span class="time-hours">19</span><span class="time-sup">40</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#design">Проектирование</a><br>
+                        <span class="teacher">Сергеенко С.С.</span><br>
+                        <span class="room">412</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#algorithms">Алгоритмизация</a><br>
+                        <span class="teacher">Дмитриев Д.Д.</span><br>
+                        <span class="room">202</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="time-range">
+                            <span class="time-hours">19</span><span class="time-sup">50</span>
+                            –
+                            <span class="time-hours">21</span><span class="time-sup">50</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#graphics">Компьютерная графика</a><br>
+                        <span class="teacher">Петров П.П.</span><br>
+                        <span class="room">414</span>
+                    </td>
+                    <td>
+                        <a href="lectures.html#db">Базы данных</a><br>
+                        <span class="teacher">Иванов И.И.</span><br>
+                        <span class="room">412</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            &copy; Все права защищены. 2016 год
+        </div>
+    </div>
+
+</body>
+</html>
